@@ -1,0 +1,41 @@
+<div align="center">
+<h1>
+  Welcome to Component 2
+</h1>
+<br><hr><br>
+
+<table>
+  <tr><th>Number 1 :</th><td><input type="number" [(ngModel)]="num1" (change)="activateButton()" /></td></tr>
+  <tr><th>Number 2 :</th><td><input type="number" [(ngModel)]="num2" (change)="activateButton()" /></td></tr>
+</table>
+<br>
+
+<table>
+<tr>
+  <td><input appArthdir [appBetterHighlight] type="button" value="Addition" [disabled]="twoarg" (click)="add()" /></td>
+  <td>{{numadd}}</td>
+</tr>
+<tr>
+  <td><input appArthdir [appBetterHighlight] type="button" value="Subtraction" [disabled]="twoarg" (click)="sub()" /></td>
+  <td>{{numsub}}</td>
+</tr>
+<tr>
+  <td><input appArthdir [appBetterHighlight] type="button" value="Multiplication" [disabled]="twoarg" (click)="mul()" /></td>
+  <td>{{nummul}}</td>
+</tr>
+<tr>
+  <td><input appArthdir [appBetterHighlight] type="button" value="Division" [disabled]="twoarg" (click)="div()" /></td>
+  <td>{{numdiv}}</td>
+</tr>
+<tr>
+  <td><input appArthdir [appBetterHighlight] type="button" value="Factorial" [disabled]="onearg" (click)="fact()" /></td>
+  <td>{{numfact}}</td>
+</tr>
+<tr>
+  <td><input appArthdir [appBetterHighlight] type="button" value="Even or Odd" [disabled]="onearg" (click)="evenOdd()" /></td>
+  <td>{{numeo}}</td>
+</tr>
+</table>
+
+<br><hr><br>
+</div>
